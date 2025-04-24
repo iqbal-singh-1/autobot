@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://iqbal-singh-1.github.io/autobot",
+  "homepage": "https://iqbal-singh-1.github.io/autobot/autobot",
   "scripts": {
     "dev": "vite",
     "dev:server": "node server/index.js",
