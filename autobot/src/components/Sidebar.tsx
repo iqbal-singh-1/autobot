@@ -16,8 +16,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ chats, onSelectChat, activeCha
   );
 
   return (
-    <div className="h-full w-64 border-r bg-white p-4 shadow-md transition-colors duration-300 dark:bg-gray-800 dark:border-gray-700">
-      <div className="mb-4">
+    <div className="h-full w-64 border-r bg-white p-4 pt-[80px] shadow-md transition-colors duration-300 dark:bg-gray-800 dark:border-gray-700">
+      <div className="mb-4 pl-10">
         <div className="relative">
           <input
             type="text"

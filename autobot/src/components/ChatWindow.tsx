@@ -1,5 +1,6 @@
-import { MessageCircle, User } from 'lucide-react';
 import React, { useEffect, useRef } from 'react';
+import ReactMarkdown from 'react-markdown';
+import { MessageCircle, User } from 'lucide-react';
 import { Message } from '../types';
 
 interface ChatWindowProps {
@@ -47,7 +48,9 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ messages }) => {
             }`}
           >
             <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100"></div>
-            <div className="relative max-w-[80%]">{message.content}</div>
+            <div className="relative max-w-[80%] whitespace-pre-wrap break-words">
+              <ReactMarkdown>{message.content}</ReactMarkdown>
+            </div>
           </div>
         </div>
       ))}
